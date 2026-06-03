@@ -1,0 +1,253 @@
+<app-header />
+<section class="principale md:grid md:grid-cols-3 lg:grid lg:grid-cols-5 gap-8 lg:px-16 px-8 py-8 xl:px-30 xl:py-16 lg:mx-16 lg:my-4 lg:rounded-md">
+    <div class="space-y-6 xl:space-y-8 md:col-span-2">
+        <p class="text-2xl lg:text-5xl text-white font-bold">Agir aujourd'hui pour un avenir durable dans le Bassin du Congo</p>
+        <p class="text-sm lg:text-base xl:text-lg text-gray-300">RH3D oeuvre pour la gestion durable des ressources naturelles et l'amélioration des conditions de vie des populations à travers des actions concrètes, inclusives et innovantes.</p>
+        <div class="flex gap-4">
+            <button class="bg-green-700 text-gray-100 font-semibold text-sm xl:text-lg py-2.5 px-4 rounded-md hover:bg-green-700">
+            <a href="/about-us">Découvrir nos actions</a>
+            </button>
+            <button class="border border-gray-300 text-gray-100 font-semibold text-sm xl:text-lg py-2.5 px-4 rounded-md hover:bg-green-700">
+                <a href="/contact">Nous rejoindre</a>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-green-100 lg:mx-16 lg:my-4 rounded-md">
+    <div class="grid grid-cols-2 gap-4 lg:gap-0 md:grid-cols-4 lg:divide-green-900 lg:divide-x-2">
+        <div class="flex flex-col items-center justify-center">
+            <fa-icon [icon]="faSeedling" class="text-green-800 text-4xl xl:text-5xl font-bold"></fa-icon>
+            <div>
+                <a href="/project" class="text-green-800 xl:text-2xl lg:text-xl font-bold">Projets réalisés</a>
+            </div>
+
+        </div>
+        <div class="text-center flex flex-col items-center justify-center">
+            <fa-icon [icon]="faUsers" class="text-green-800 text-4xl xl:text-5xl font-bold"></fa-icon>
+            <div>
+                <a href="/beneficiaire" class="text-green-800 xl:text-2xl lg:text-xl font-bold">Beneficiaires</a>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <fa-icon [icon]="faHandshake" class="text-green-800 text-4xl xl:text-5xl font-bold"></fa-icon>
+            <div>
+                <a href="/partenaire" class="text-green-800 xl:text-2xl lg:text-xl font-bold">Partenaires engagés</a>
+            </div>
+        </div>
+        <div class=" flex flex-col justify-center items-center">
+            <fa-icon [icon]="faLocationDot" class="text-green-800 text-4xl xl:text-5xl font-bold"></fa-icon>
+            <div>
+                <a href="/zone" class="text-green-800 xl:text-2xl lg:text-xl font-bold">Zones d'intervention</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-50">
+    <div class="grid lg:grid-cols-2">
+        <div class="lg:px-16 p-8 space-y-3 xl:px-30 lg:py-8">
+            <span class="flex items-center">
+                <span class="h-px bg-green-600/50 w-1/12"></span>
+                <span class="shrink-0 ps-4 lg:text-lg xl:text-2xl text-green-800 font-semibold">À PROPOS</span>
+            </span>
+
+            <p class="text-gray-800 font-bold lg:text-3xl text-2xl">Qui sommes-nous ?</p>
+            <p class="text-gray-600 text-sm lg:text-base xl:text-xl text-justify">
+                Le Réseau des Hommes Dynamiques pour le Développement Durable (RH3D) est une association apolitique, laique et à but non lucratif, créé en République du Congo.
+            </p>
+            <p class="text-gray-600 text-sm lg:text-base xl:text-xl text-justify">
+                Nous fédérons des compétences pluridisciplinaires pour promouvoir le développement durable dans la région, inclusif et résilient au bénéfice des communautés.
+            </p>
+            <button class="mt-3">
+                <a href="/about-us" class="bg-green-800 text-white font-medium text-sm xl:text-xl py-2.5 px-4 rounded-md hover:bg-green-700">
+                    En savoir plus sur notre histoire
+                </a>
+            </button>
+            <div class="grid grid-cols-2 mt-5 items-center">
+                <div class="rounded-lg bg-green-800 lg:py-4 lg:px-6 p-4 lg:space-y-4 h-35 xl:h-45 hover:scale-105 transition-transform duration-300">
+                    <p class="text-gray-200 text-base lg:text-xl xl:text-2xl font-semibold">🎯 Notre vision</p>
+                    <p class="text-gray-300 pt-2 lg:pt-0 text-xs lg:text-sm xl:text-lg lg:text-justify ">
+                        '' Un bassin du Congo préservé, des communautés épanouies, un avenir durable pour tous. ''
+                    </p>
+                </div>
+                <img src="/images/DSCN5968.JPG" alt="Notre vision" class="w-full h-auto rounded-md shadow-md -ml-2 hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+        <div class="lg:pr-16 p-8 space-y-3 xl:pr-30 lg:py-8">
+            <span class="flex items-center">
+                <span class="h-px bg-green-600/50 w-1/12"></span>
+                <span class="shrink-0 ps-4 lg:text-lg xl:text-2xl text-green-800 font-semibold">NOS DOMAINES D'ACTION</span>
+            </span>
+            <!-- <p class="text-gray-800 font-bold text-3xl">Nos domaines d'action</p> -->
+            <p class="text-gray-600 text-sm lg:text-base xl:text-xl text-justify">
+                Une approche multidisciplinaire pour répondre aux défis du développement durable dans le Bassin du Congo.
+            </p>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white shadow rounded p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <fa-icon [icon]="faLeaf" class="text-green-800 text-4xl mb-2"></fa-icon>
+                    <p class="text-gray-800 font-bold xl:text-xl">Agriculture</p>
+                    <p class="text-gray-600 text-sm xl:text-lg text-center pt-2">Production durable et sécuritée alimentaire</p>
+                </div>
+                <div class="bg-white shadow rounded p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="#1F5D42">
+                        <path d="M12 2c-2 3-5 5-5 8 0 2 1.5 3 3 3h1v4h-2v2h6v-2h-2v-4h1c1.5 0 3-1 3-3 0-3-3-5-5-8z"/>
+                    </svg>
+                    <p class="text-gray-800 font-bold xl:text-xl">Foresterie</p>
+                    <p class="text-gray-600 text-sm xl:text-lg text-center pt-2">Gestion durable des écosystèmes forestiers</p>
+                </div>
+                <div class="bg-white shadow rounded p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <fa-icon [icon]="faCannabis" class="text-green-800 text-4xl mb-2"></fa-icon>
+                    <p class="text-gray-800 font-bold xl:text-xl">Agroforesterie</p>
+                    <p class="text-gray-600 text-sm xl:text-lg text-center pt-2">Intégration arbres-cultures-animaux pour des paysages résilients</p>
+                </div>
+                <div class="bg-white shadow rounded p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <fa-icon [icon]="faEarth" class="text-green-800 text-4xl mb-2"></fa-icon>
+                    <p class="text-gray-800 font-bold xl:text-xl">Environnement</p>
+                    <p class="text-gray-600 text-sm xl:text-lg text-center">Production de la biodiversité et lutte contre le climat</p>
+                </div>
+                <div class="bg-white shadow rounded p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <fa-icon [icon]="faRecycle" class="text-green-800 text-4xl mb-2"></fa-icon> 
+                    <p class="text-gray-800 font-bold xl:text-xl text-center">Développement Durable</p>
+                    <p class="text-gray-600 text-sm xl:text-lg text-center pt-2">Automatisation et égalité des chances</p>
+                </div>
+                <div class="bg-white shadow rounded p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="text-green-800 mb-2">
+                        <path d="M3 17h4v4H3v-4zm7-6h4v10h-4V11zm7-8h4v18h-4V3z"/>
+                    </svg>
+                    <p class="text-gray-800 font-bold xl:text-xl text-center">Économie & Sociale</p>
+                    <p class="text-gray-600 text-sm xl:text-lg text-center pt-2">Activités génératrices de revenus durables</p>
+                </div>
+            </div>
+            <button class="mt-3">
+                <a href="/about-us" class="border border-green-800 text-green-800 font-medium text-sm xl:text-lg py-2.5 px-4 rounded-md hover:bg-green-700 hover:text-white">
+                    Voir tous nos domaines d'action
+                </a>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="pb-20 bg-[#F0EDE8]/50">
+    <div class="lg:px-16 px-8 py-4 space-y-3 xl:px-30 lg:py-8">
+        <span class="flex items-center">
+            <span class="h-px bg-green-600/50 w-1/12"></span>
+            <span class="shrink-0 ps-4 lg:text-lg xl:text-2xl text-green-800 font-semibold">CE QUE NOUS FAISONS</span>
+        </span>
+
+        <p class="text-gray-800 font-bold text-2xl lg:text-3xl">Nos axes d'action</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 lg:px-16 xl:px-30">
+        <div class="flex gap-4 items-center">
+            <p class="text-green-800/80 font-bold text-5xl">01</p>
+            <div>
+                <p class="text-gray-800 font-semibold text-lg">Projets de développement</p>
+                <p class="text-gray-600 text-sm xl:text-lg pt-2">Conception, montage et suivi de projets agricoles, forestiers, agroforestiers et environnementaux.</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-center">
+            <p class="text-green-800/80 font-bold text-5xl">02</p>
+            <div>
+                <p class="text-gray-800 font-semibold text-lg">Projets de développement</p>
+                <p class="text-gray-600 text-sm xl:text-lg pt-2">Conception, montage et suivi de projets agricoles, forestiers, agroforestiers et environnementaux.</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-center">
+            <p class="text-green-800/80 font-bold text-5xl">03</p>
+            <div>
+                <p class="text-gray-800 font-semibold text-lg">Projets de développement</p>
+                <p class="text-gray-600 text-sm xl:text-lg pt-2">Conception, montage et suivi de projets agricoles, forestiers, agroforestiers et environnementaux.</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-center">
+            <p class="text-green-800/80 font-bold text-5xl">04</p>
+            <div>
+                <p class="text-gray-800 font-semibold text-lg">Projets de développement</p>
+                <p class="text-gray-600 text-sm xl:text-lg pt-2">Conception, montage et suivi de projets agricoles, forestiers, agroforestiers et environnementaux.</p>
+            </div>
+        </div><div class="flex gap-4 items-center">
+            <p class="text-green-800/80 font-bold text-5xl">05</p>
+            <div>
+                <p class="text-gray-800 font-semibold text-lg">Projets de développement</p>
+                <p class="text-gray-600 text-sm xl:text-lg pt-2">Conception, montage et suivi de projets agricoles, forestiers, agroforestiers et environnementaux.</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-center">
+            <p class="text-green-800/80 font-bold text-5xl">06</p>
+            <div>
+                <p class="text-gray-800 font-semibold text-lg">Projets de développement</p>
+                <p class="text-gray-600 text-sm xl:text-lg pt-2">Conception, montage et suivi de projets agricoles, forestiers, agroforestiers et environnementaux.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="p-8 lg:px-16 xl:px-30 xl:py-16">
+    <div class="">
+        <p class="text-green-900 font-bold lg:text-3xl text-2xl text-center">Comment nous soutenir ?</p>
+        <p class="flex justify-center pt-4">
+            <span class="block h-1 bg-green-800 rounded-full w-1/12"></span>
+        </p>
+        <p class="text-gray-600 text-center px-4 py-4 xl:py-8 text-base xl:text-xl">
+            Chaque geste compte. Rejoignez notre réseau et contribuez à bâtir un monde plus juste et plus durable.
+        </p>
+    </div>
+    <div class="grid grid-cols-1  lg:grid-cols-3 my-8 gap-12">
+        <div class="rounded-2xl bg-green-800 p-6 flex flex-col items-center text-center space-y-5 hover:scale-105 transition-transform duration-300">
+            <fa-icon [icon]="faHeart" class="text-gray-100 text-5xl font-bold mb-4"></fa-icon>
+           <p class="text-gray-100 text-2xl font-bold mb-4">
+            Faire un don
+           </p>
+           <p class="text-gray-300 text-sm">
+            Votre soutien nous permet de financer les projets, d'améliorer durablement les conditions de vie et de protéger l'environnement.
+           </p>
+           <button class="mt-4">
+                <a href="/don" class="border border-gray-300 text-gray-300 font-medium py-2.5 px-4 rounded-md hover:bg-green-700 xl:text-lg">
+                    Donner maintenant
+                </a>
+            </button>
+        </div>
+        <div class="rounded-2xl bg-green-50 p-6 flex flex-col items-center text-center space-y-5 border-2 border-green-800 shadow hover:scale-105 transition-transform duration-300 ">
+            <fa-icon [icon]="faHandshake" class="text-green-800 text-5xl font-bold mb-4"></fa-icon>
+           <p class="text-green-800 text-2xl font-semibold mb-4">
+            Partenariat
+           </p>
+           <p class="text-gray-500 text-sm">
+           Entreprises, institutions, associations, construisons ensemble des programmes à fort impact durable.
+           </p>
+           <button class="mt-4">
+                <a href="/partenaire" class="bg-green-800 text-gray-100 font-medium py-2.5 px-4 rounded-md hover:bg-green-700 xl:text-lg">
+                    Nous contacter
+                </a>
+            </button>
+        </div>
+        <div class="rounded-2xl bg-[#F0EDE8] p-6 flex flex-col items-center text-center space-y-5 border-2 border-[#f3ddb9] shadow hover:scale-105 transition-transform duration-300">
+           <fa-icon [icon]="faHandsHoldingCircle" class="text-green-800 text-5xl font-bold mb-4"></fa-icon>
+           <p class="text-green-800 text-2xl font-semibold mb-4">
+            Devenir Bébévole
+           </p>
+           <p class="text-gray-500 text-sm">
+            Vous souhaitez contribuer concrètement au dévelopement durable ? Rejoignez notre réseau de bénévoles et participez à des actions de terrain à fort impact.
+           </p>
+           <button class="mt-4">
+                <a href="/benevole" class="bg-green-800 text-gray-100 font-medium py-2.5 px-4 rounded-md hover:bg-green-700 xl:text-lg">
+                    Rejoindre le réseau
+                </a>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- <section class="px-16 py-10 xl:px-30 xl:py-16 bg-gray-50 mb-15">
+    <div class="space-y-4 mb-8">
+        <p class="text-2xl text-green-900 font-bold">Galerie photo</p>
+        <span class="block h-1 bg-green-800 rounded-full w-1/12"></span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        @for(photo of photos; track photo.id) {
+        <div class="overflow-hidden rounded-lg shadow-md bg-gray-50">
+            <img 
+                [src]="photo.src" 
+                [alt]="photo.alt"
+                class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            >
+        </div> }
+    </div>
+</section> -->
+<app-footer />

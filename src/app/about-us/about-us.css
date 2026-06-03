@@ -1,0 +1,8 @@
+.principale {
+  background-image: 
+    linear-gradient(to right, rgba(14, 59, 46, 0.9) 30%, rgba(14, 59, 46, 0.6) 50%, rgba(14, 59, 46, 0.7) 70%),
+    url('/images/img.jpeg');
+
+  background-size: cover;
+  background-position: center;
+}

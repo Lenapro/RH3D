@@ -1,0 +1,122 @@
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="px-4 py-5 sm:px-6 lg:px-16 xl:px-30">
+    <div class="flex h-16 items-center justify-between">
+      <div class="flex-1 md:flex md:items-center md:gap-12">
+        <a class="block text-teal-600" href="/">
+          <img src="images/logo.jpeg" alt="Logo" class="h-auto w-35" />
+        </a>
+      </div>
+      <div class="md:flex md:items-center md:gap-12">
+        <nav aria-label="Global" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a routerLink="/" [class]="linkClass('/')">
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a routerLink="/about-us" [class]="linkClass('/about-us')">
+                A propos
+              </a>
+            </li>
+            <li>
+              <a routerLink="/project" [class]="linkClass('/project')">
+                Projets
+              </a>
+            </li>
+            <li>
+              <a routerLink="/news" [class]="linkClass('/news')">
+                Actualités
+              </a>
+            </li>
+            <li>
+              <a routerLink="/contact" [class]="linkClass('/contact')">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="lg:flex items-center gap-4">
+          <div class="sm:flex sm:gap-4 hidden">
+            <a class="rounded-md bg-green-900 px-5 py-2.5 xl:text-lg font-medium text-white shadow-sm" href="/partenaire">
+              Devenir partenaire
+            </a>
+          </div>
+
+          <div class="block md:hidden">
+            <button class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75" (click)="isMenuOpen = !isMenuOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+@if (isMenuOpen) {
+  <div class="fixed inset-0 z-50 lg:hidden">
+    <div class="absolute inset-0 bg-black/30" (click)="isMenuOpen = false"></div>
+    <div class="absolute top-0 left-0 h-screen w-80 max-w-[85%] bg-white shadow-xl flex flex-col justify-between border-r border-gray-200">
+      <div class="px-4 py-6">
+        <div class="mb-6 flex items-center justify-between">
+          <a routerLink="/" (click)="isMenuOpen = false">
+            <img src="images/logo.jpeg" alt="logo" class="h-auto w-35" />
+          </a>
+
+          <button
+            class="rounded-md p-2 text-green-800"
+            (click)="isMenuOpen = false"
+          >
+            ✕
+          </button>
+        </div>
+
+        <ul class="space-y-2">
+          <li>
+            <a routerLink="/" (click)="isMenuOpen = false"
+              [class]="linkClass('/')">
+              Accueil
+            </a>
+          </li>
+
+          <li>
+            <a routerLink="/about-us" (click)="isMenuOpen = false"
+              [class]="linkClass('/about-us')">
+              A propos
+            </a>
+          </li>
+
+          <li>
+            <a routerLink="/projects" (click)="isMenuOpen = false"
+              [class]="linkClass('/projects')">
+              Projets
+            </a>
+          </li>
+
+          <li>
+            <a routerLink="/news" (click)="isMenuOpen = false"
+              [class]="linkClass('/news')">
+              Actualités
+            </a>
+          </li>
+
+          <li>
+            <a routerLink="/contact" (click)="isMenuOpen = false"
+              [class]="linkClass('/contact')">
+              Contact
+            </a>
+          </li>
+          <li class="sm:flex sm:gap-4 mt-8">
+            <a class="rounded-md bg-green-900 px-5 py-2.5 xl:text-lg font-medium text-white shadow-sm" href="/partenaire">
+              Devenir partenaire
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+}
