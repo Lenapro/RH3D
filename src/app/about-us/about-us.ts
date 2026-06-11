@@ -3,11 +3,11 @@ import { Header } from '../header/header';
 import { Footer } from '../footer/footer';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHeart, faHandsHoldingCircle, faHandshake} from '@fortawesome/free-solid-svg-icons';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
-  imports: [Header, Footer, FontAwesomeModule],
+  imports: [Header, Footer, FontAwesomeModule, RouterLink],
   templateUrl: './about-us.html',
   styleUrl: './about-us.css',
 })

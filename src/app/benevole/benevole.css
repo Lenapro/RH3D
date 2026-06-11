@@ -1,7 +1,7 @@
 .principale {
   background-image: 
     linear-gradient(to right, rgba(14, 59, 46, 0.9) 30%, rgba(14, 59, 46, 0.6) 50%, rgba(14, 59, 46, 0.5) 50%),
-    url('/images/side-view.jpg');
+    url('images/side-view.jpg');
 
   background-size: cover;
   background-position: bottom;

@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { Header } from '../header/header';
 import { Footer } from '../footer/footer';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCoffee, faSeedling, faPeopleLine, faHandshake, faLocationDot, faEarth, faUsers, faLeaf, faCannabis, faHeart, faHandsHoldingCircle, faRecycle} from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +9,7 @@ import { faCoffee, faSeedling, faPeopleLine, faHandshake, faLocationDot, faEarth
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Footer, FontAwesomeModule],
+  imports: [Header, Footer, FontAwesomeModule, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
